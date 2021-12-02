@@ -28,6 +28,7 @@ export default defineComponent({
 
 <style scoped>
 button {
-  margin: 10px 0;
+  display: block;
+  margin: 10px auto;
 }
 </style>

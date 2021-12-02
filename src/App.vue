@@ -1,10 +1,6 @@
 <template>
-  <div>
-    <Hoge />
-  </div>
-  <div>
-    <Fuga />
-  </div>
+  <Hoge />
+  <Fuga />
 </template>
 
 <script lang="ts">
