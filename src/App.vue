@@ -1,26 +1,22 @@
 <template>
-  <button @click="handleClick">トーストを表示</button>
-  <Toast :is-toast-active="isToastActive" @close-toast="closeToast"/>
+  <div>
+    <Hoge />
+  </div>
+  <div>
+    <Fuga />
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { useToast }from './lib/use-toast'
-import Toast from './components/Toast.vue'
+import Hoge from './components/Hoge.vue';
+import Fuga from './components/Fuga.vue';
 
 export default defineComponent({
   components: {
-    Toast,
+    Hoge,
+    Fuga,
   },
-  setup() {
-    const { isToastActive, handleClick, closeToast } = useToast();
-
-    return {
-      isToastActive,
-      handleClick,
-      closeToast,
-    }
-  }
 }); 
 </script>
 

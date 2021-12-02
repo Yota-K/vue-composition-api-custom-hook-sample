@@ -3,8 +3,7 @@
     <div v-if="isToastActive" class="toast">
       <button @click="$emit('closeToast')" class="toast-close-btn">×</button>
       <div class="toast-container">
-        <h2>Toastのサンプル</h2>
-        <p>トースト🍞</p>
+        <slot />
       </div>
     </div>
   </transition>
